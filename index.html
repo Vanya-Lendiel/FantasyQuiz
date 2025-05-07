@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" id="home-btn">Fantasy Quiz</div>
+            <div class="nav-right">
+                <button class="nav-btn" id="about-btn">Про нас</button>
+                <button class="nav-btn" id="contact-btn">Контакти</button>
+                <button class="theme-toggle" id="theme-toggle">🌓</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="main-content">
+            <div class="quiz-header">
+            </div>
+
+            <div class="quiz-container">
+                <div id="start-screen" class="start-screen">
+                    <h2>Гаррі Поттер</h2>
+                    <p>Відповідай на 10 простих запитань.</p>
+                    <button id="start-btn" class="btn">Почати квіз</button>
+                </div>
+
+                <div id="quiz-screen" class="quiz-screen hidden">
+                    <div class="quiz-progress">
+                        <div class="question-count">Запитання <span id="current-question">1</span>/10</div>
+                    </div>
+                    <div id="question" class="question"></div>
+                    <div id="options" class="options"></div>
+                    <button id="next-btn" class="btn hidden">Далі</button>
+                </div>
+
+                <div id="result-screen" class="result-screen hidden">
+                    <h2>Твій результат</h2>
+                    <div id="score" class="score"></div>
+                    <button id="restart-btn" class="btn">Спробувати знову</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="about-screen" class="about-screen hidden">
+            <h2>Про нас</h2>
+            <div class="about-content">
+                <p>Ласкаво просимо на наш сайт Fantasy Quiz!</p>
+                <p>Ми створюємо цікаві та пізнавальні квізи з різних тем, щоб ви могли перевірити свої знання та дізнатися щось нове.</p>
+                <p>Приємного проходження!</p>
+            </div>
+            <button id="back-to-main-btn" class="btn">На головну</button>
+        </div>
+
+        <div id="contact-screen" class="about-screen hidden">
+            <h2>Контакти</h2>
+            <div class="about-content">
+                <p>Зв'язатися з нами:</p>
+                <p>Email: info@fantasyquiz.com</p>
+                <p>Телефон: +380 12 345 6789</p>
+                <p>Адреса: м. Київ, вул. Тестова, 123</p>
+            </div>
+            <button id="back-to-main-btn2" class="btn">На головну</button>
+        </div>
+    </div>
+
+    <div id="warning-modal" class="modal">
+        <div class="modal-content">
+            <h2>Завершіть тест!</h2>
+            <p>Ви не можете перейти на іншу сторінку, доки не завершите тест.</p>
+            <button id="continue-btn" class="btn modal-btn">Продовжити тест</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
